@@ -1,0 +1,48 @@
+.join-us{
+    display: flex;
+    padding: 0 2rem;
+    gap: 10rem;
+
+
+}
+
+.join-us__left{
+   color:white;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+
+}
+.join-us__left>hr{
+    position: absolute;
+    width: 10.5rem;
+    border:2px solid var(--orange);
+    border-radius: 20%;
+    margin: -10px 0;
+}
+.join-us__right{
+    display: flex;
+    justify-content: flex-end;
+    align-self: flex-end;
+}
+.join-us__right__from{
+    display: flex;
+    gap: 3rem;
+    background-color: gray;
+    padding: 1rem 2rem;
+}
+.join-us__right__from>input{
+     background-color: transparent;
+     border: none;
+     outline: none;
+     color: var(--lightgray);
+}
+::placeholder{
+    color:var(--lightgray);
+}
+.join-us__right--btn{
+    background-color: var(--orange);
+    color: white;
+  
+}
