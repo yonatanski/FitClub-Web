@@ -82,3 +82,14 @@
     
 }
 
+@media screen  and (max-width:768px){
+.plans__card{
+    flex-direction: column;
+}
+
+.plans__card__item:nth-child(2){
+  
+    transform:none;
+
+}
+}
