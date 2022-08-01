@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <div className="header">
       <img className="header__logo" src={Logo} alt="" />
-      {menuOpened && mobile ? (
+      {menuOpened && mobile === true ? (
         <div style={{ backgroundColor: "var(--appColor)", padding: "0.5rem", borderRadius: "5px" }} onClick={() => setMenuOpened(false)}>
           <img src={Bars} alt="ham burger menu " style={{ width: "1.5rem", height: "1.5rem" }} />
         </div>
