@@ -13,7 +13,7 @@ const Programs = () => {
       </div>
       <div className="programs__categories">
         {programsData.map((program) => (
-          <div className="programs__categories__category">
+          <div className="programs__categories__category" key={program.heading}>
             {program.image}
             <span>{program.heading}</span>
             <span>{program.details}</span>

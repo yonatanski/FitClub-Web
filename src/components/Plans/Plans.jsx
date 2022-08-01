@@ -5,7 +5,7 @@ import "./Plans.css"
 
 const Plans = () => {
   return (
-    <div className="plans">
+    <div className="plans" id="plans">
       <div className="blur plans--blur-1"></div>
       <div className="blur plans--blur-2"></div>
       <div className="programs__header" style={{ gap: "2rem" }}>
@@ -23,7 +23,7 @@ const Plans = () => {
 
             <div className="plans__card__feauters">
               {plan.features.map((feauter, i) => (
-                <div className="plans__card__feauters__item">
+                <div className="plans__card__feauters__item" key={i}>
                   <img src={whiteTick} alt="white tick" />
                   <span key={i}>{feauter}</span>
                 </div>

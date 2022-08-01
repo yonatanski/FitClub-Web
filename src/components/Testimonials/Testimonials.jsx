@@ -12,7 +12,7 @@ const Testimonials = () => {
   const transition = { type: "spring", duration: 3 }
 
   return (
-    <div className="testimonials">
+    <div className="testimonials" id="testimonials">
       <div className="testimonials__left">
         <span> Testimonials </span>
         <span className="stroke-text"> what they </span>
