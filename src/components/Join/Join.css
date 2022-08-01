@@ -46,3 +46,24 @@
     color: white;
   
 }
+
+
+@media screen  and (max-width:768px){
+
+    .join-us{
+      flex-direction: column;
+      gap: 2rem;
+    
+    }
+    .join-us__left{
+        font-size: x-large;
+        flex-direction: column;
+    }
+    .join-us__right{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        padding: 2rem;
+        
+    }
+}
