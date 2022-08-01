@@ -9,13 +9,14 @@ import { motion } from "framer-motion"
 
 const Hero = () => {
   const transition = { type: "spring", duration: 3 }
+  const mobile = window.innerWidth <= 768 ? true : false
   return (
     <div className="hero">
       <div className="blur hero--blur "></div>
       <div className="hero__leftH">
         <Header />
         <div className="hero__theBestAdd">
-          <motion.div initial={{ left: "238px" }} whileInView={{ left: "8px" }} transition={{ ...transition, type: "tween" }}></motion.div>
+          <motion.div initial={{ left: mobile ? "165" : "238px" }} whileInView={{ left: "8px" }} transition={{ ...transition, type: "tween" }}></motion.div>
           <span>the best fitness club in the town</span>
         </div>
         {/* hero heading text */}
